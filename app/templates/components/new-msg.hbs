@@ -1,0 +1,25 @@
+{{#if addNewMsg}}
+  <h1>New Announcement</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="owner">Author</label>
+          {{input value=author id="author"}}
+        </div>
+
+        <div class="form-group">
+          <label for="type">Subject</label>
+          {{input value=subject id="subject"}}
+        </div>
+
+        <div class="form-group">
+          <label for="city">Message</label>
+          {{input value=msg id="msg"}}
+        </div>
+
+        <button {{action 'saveMsg'}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'msgFormShow'}}>New Announcement</button>
+{{/if}}

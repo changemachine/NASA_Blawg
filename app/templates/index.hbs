@@ -1,0 +1,28 @@
+{{outlet}}
+<div class="header">
+  {{#link-to 'about'}}About Us{{/link-to}}
+   | {{#link-to 'contact'}}Contact Us{{/link-to}}
+</div>
+
+<h1> Welcome to Super Rentals </h1>
+
+<p>We hope you find exactly what you're looking for in a place to stay.</p>
+
+<ul>
+  {{#each model.rental as |rental|}}
+  {{rental-tile rental=rental destroyRental="destroyRental"}}
+  {{/each}}
+</ul>
+
+{{new-rental save2="save3"}}
+
+<hr>
+<h4>Announcements</h4>
+
+<ul>
+  {{#each model.announcements as |announcement|}}
+    {{msg-tile announcement=announcement destroyMsg="destroyMsg"}}
+  {{/each}}
+</ul>
+
+{{new-msg saveMsg="saveMsg"}}
