@@ -1,4 +1,3 @@
-{{outlet}}
 <div class="header jumbotron">
   <h1> Welcome to Busted </h1>
   <p>We hope you find your ex's mugshot.</p>
@@ -27,7 +26,9 @@
   </div>
 </nav>
 
-
+<div class="container">
+  {{outlet}}
+</div>
 
 <div class="grid">
   {{#each model.article as |article|}}
@@ -35,4 +36,4 @@
   {{/each}}
 </div>
 
-<!-- {{new-article saveArticle="saveArticle"}} -->
+{{new-article saveArticle="saveArticle"}}

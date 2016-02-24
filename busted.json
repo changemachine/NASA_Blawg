@@ -1,9 +1,4 @@
 {
-  "ads" : [ {
-    "image" : "",
-    "title" : "",
-    "vendor" : ""
-  } ],
   "articles" : [
     { "author" : "Gary",
       "image" : "https://s-media-cache-ak0.pinimg.com/564x/a0/fb/56/a0fb561d364a0b97b31a8718b16268f8.jpg",
