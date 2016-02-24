@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'busted',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://superbrentals.firebaseio.com/',
+    firebase: 'https://busted.firebaseIO.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

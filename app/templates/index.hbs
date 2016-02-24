@@ -1,28 +1,38 @@
 {{outlet}}
-<div class="header">
-  {{#link-to 'about'}}About Us{{/link-to}}
-   | {{#link-to 'contact'}}Contact Us{{/link-to}}
+<div class="header jumbotron">
+  <h1> Welcome to Busted </h1>
+  <p>We hope you find your ex's mugshot.</p>
 </div>
 
-<h1> Welcome to Super Rentals </h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div name="hamburger" class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+      data-toggle="collapse" data-target="#menu-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {{ link-to 'Home' 'index' class="navbar-brand" }}
+    </div>
+    <div class="collapse navbar-collapse" id="menu-collapse">
+      <ul class="nav navbar-nav">
+        <!-- {{#link-to 'contact'}}Contact Us{{/link-to}}
+        {{#link-to 'about'}}About Us{{/link-to}} | -->
+        <li>{{ link-to 'About' 'about' }}</li>
+        <li>{{ link-to 'Contact' 'contact' }}</li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<p>We hope you find exactly what you're looking for in a place to stay.</p>
 
-<ul>
-  {{#each model.rental as |rental|}}
-  {{rental-tile rental=rental destroyRental="destroyRental"}}
+
+<div class="grid">
+  {{#each model.article as |article|}}
+    {{article-tile article=article destroyArticle="destroyArticle"}}
   {{/each}}
-</ul>
+</div>
 
-{{new-rental save2="save3"}}
-
-<hr>
-<h4>Announcements</h4>
-
-<ul>
-  {{#each model.announcements as |announcement|}}
-    {{msg-tile announcement=announcement destroyMsg="destroyMsg"}}
-  {{/each}}
-</ul>
-
-{{new-msg saveMsg="saveMsg"}}
+<!-- {{new-article saveArticle="saveArticle"}} -->

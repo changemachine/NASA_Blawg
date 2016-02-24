@@ -1,0 +1,44 @@
+{
+  "ads" : [ {
+    "image" : "",
+    "title" : "",
+    "vendor" : ""
+  } ],
+  "articles" : [
+    { "author" : "Gary",
+      "image" : "https://s-media-cache-ak0.pinimg.com/564x/a0/fb/56/a0fb561d364a0b97b31a8718b16268f8.jpg",
+      "posted" : "2/23/2016",
+      "story" : "It all started...",
+      "title" : "Helluva World",
+      "tags" : ["world", "noodles", "people power"]
+    },
+    { "author" : "Larry",
+      "image" : "./img/hedgehog.jpg",
+      "posted" : "2/23/2016",
+      "story" : "It all started...",
+      "title" : "Helluva World",
+      "tags" : ["world", "noodles", "people power"]
+    },
+    { "author" : "Regina",
+      "image" : "./img/hedgehog.jpg",
+      "posted" : "2/23/2016",
+      "story" : "It all started...",
+      "title" : "Helluva World",
+      "tags" : ["world", "noodles", "people power"]
+    },
+    { "author" : "Tilianna",
+      "image" : "./img/hedgehog.jpg",
+      "posted" : "2/23/2016",
+      "story" : "It all started...",
+      "title" : "Helluva World",
+      "tags" : ["world", "noodles", "people power"]
+    },
+    { "author" : "Woggleman",
+      "image" : "./img/hedgehog.jpg",
+      "posted" : "2/23/2016",
+      "story" : "It all started...",
+      "title" : "Helluva World",
+      "tags" : ["world", "noodles", "people power"]
+    }
+  ]
+}
