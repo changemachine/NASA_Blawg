@@ -9,9 +9,9 @@ export default Ember.Component.extend({
           posted: Date.now(),
           story: this.get('story'),
           title: this.get('title'),
-          tags: this.get('tags')
+          tags: this.get('tags'),
+          id: this.get('title').replace(/&|\+|\s|["<>#%{}|^~\[\]`\\]/g, "-"),
         };
-        console.log("PARAMS " + params.posted);
         this.sendAction('saveArticle', params);
       }
   }

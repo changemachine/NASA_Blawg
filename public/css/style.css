@@ -9,7 +9,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 .grid-cell {
   flex: 0 0 .20%; /* flex-grow flex-shrink flex-basis */
@@ -32,9 +31,32 @@
   flex: 1;
   justify-content: space-between;
 }
-/*.tz_l{
-  flex: 0 0 .50%;
+
+.form {
+  max-width: 600px;
+  display:flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%; /* flex-grow flex-shrink flex-basis */
+  justify-content: center;
+  background: snow;
+  padding: 10px;
+  margin: 10px;
 }
-.tz_r{
-  flex: 0 0 .50%;
-}*/
+.form-group {
+  flex: 0 0 100%; /* flex-grow flex-shrink flex-basis */
+}
+
+.w90{
+  width: 90%;
+  margin: 10px;
+}
+
+.w50{
+  width: 30%;
+  margin: 10px;
+}
+
+textarea{
+  width: 100%;
+  height: 200px;
+}

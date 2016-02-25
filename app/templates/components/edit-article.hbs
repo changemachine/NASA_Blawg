@@ -1,0 +1,26 @@
+{{#if editArticleForm}}
+  <div class="container">
+    <h4>Edit {{model.title}}</h4>
+
+    <form class="saveArticle form">
+      <div class="form-group">
+        {{input value=author class="w50" id="author" placeholder=model.author}}
+      </div>
+      <div class="form-group">
+        {{input value=image class="w90" id="image" placeholder=model.image}}
+      </div>
+      <div class="form-group">
+        {{input value=title class="w90" id="title" placeholder=model.title}}
+      </div>
+      <div class="form-group">
+        {{textarea value=story class="w90" id="story" placeholder=model.story}}
+      </div>
+      <div class="form-group">
+        {{input value=tags class="w90" id="tags" placeholder=model.tags}}
+      </div>
+      <button {{action 'editArticle' model}}>Save!</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'editArticleForm'}}>Edit</button>
+{{/if}}

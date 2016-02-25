@@ -1,6 +1,6 @@
 <div class="header jumbotron">
-  <h1> Welcome to Busted </h1>
-  <p>We hope you find your ex's mugshot.</p>
+  <h1> Welcome to NASA Blawg </h1>
+  <p>Nerds!</p>
 </div>
 
 <nav class="navbar navbar-default">
@@ -21,6 +21,7 @@
         {{#link-to 'about'}}About Us{{/link-to}} | -->
         <li>{{ link-to 'About' 'about' }}</li>
         <li>{{ link-to 'Contact' 'contact' }}</li>
+        <li>{{ link-to 'New Article' 'new-article' }}</li>
       </ul>
     </div>
   </div>
@@ -35,5 +36,3 @@
     {{article-tile article=article destroyArticle="destroyArticle"}}
   {{/each}}
 </div>
-
-{{new-article saveArticle="saveArticle"}}

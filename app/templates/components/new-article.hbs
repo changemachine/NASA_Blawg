@@ -1,29 +1,23 @@
-{{yield}}
 <div class="container">
-  <form class="saveArticle">
+  <form class="saveArticle form">
     <div class="form-group">
-      <label for="author">Author</label>
-      {{input value=author id="author"}}
+      {{input value=author class="w50" id="author" placeholder="Author"}}
     </div>
 
     <div class="form-group">
-      <label for="image">Image(url)</label>
-      {{input value=image id="image"}}
+      {{input value=image class="w90" id="image" placeholder="image url"}}
     </div>
 
     <div class="form-group">
-      <label for="title">Title</label>
-      {{input value=title id="title"}}
+      {{input value=title class="w90" id="title" placeholder="Title"}}
     </div>
 
     <div class="form-group">
-      <label for="story">Story Text</label>
-      {{textarea value=story id="story"}}
+      {{textarea value=story class="w90" id="story" placeholder="Your post..."}}
     </div>
 
     <div class="form-group">
-      <label for="tags">Tags</label>
-      {{input value=tags id="tags"}}
+      {{input value=tags class="w90" id="tags" placeholder="tags, tags, tags"}}
     </div>
 
     <button {{action 'saveArticle'}}>Save!</button>
