@@ -21,6 +21,11 @@ export default Ember.Component.extend(
       };
       this.set('editArticleForm', false);
       this.sendAction('edit', article, params);
+    },
+    delete(article) {
+      if (confirm('Are you sure you want to delete this post?')) {
+        this.sendAction('destroyArticle', article);
+      }
     }
   }
 });

@@ -13,6 +13,23 @@ export default Ember.Route.extend({
       });
       article.save();
       this.transitionTo('article', params.article_id);
+    },
+    saveComment(params) {
+      var route = this;
+      var article = params.article;
+      var newComment = this.store.createRecord('comment', params);
+      article.get('comments').addObject(newComment);
+      newComment.save().then(function() {
+        route.transitionTo('article', params.article_id);
+      });
+    },
+    destroyArticle(article) {
+      var route = this;
+      article.destroyRecord().then(
+        function(){
+          route.transitionTo('index');
+        }
+      );
     }
   }
 });

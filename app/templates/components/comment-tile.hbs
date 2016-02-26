@@ -1,0 +1,10 @@
+<div class="comment">
+  <h1>COMMENT</h1>
+  
+  {{#each comments as |comment|}}
+  {{log comment}}
+    {{comment.commenter}}
+    {{comment.comment_text}}
+  {{/each}}
+
+</div>

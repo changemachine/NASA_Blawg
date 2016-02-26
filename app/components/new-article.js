@@ -11,6 +11,7 @@ export default Ember.Component.extend({
           title: this.get('title'),
           tags: this.get('tags'),
           id: this.get('title').replace(/&|\+|\s|["<>#%{}|^~\[\]`\\]/g, "-"),
+          comments: []
         };
         this.sendAction('saveArticle', params);
       }

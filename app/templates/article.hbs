@@ -1,4 +1,11 @@
+{{ header-nav }}
+
 <img src={{model.image}}/>
 <h1>{{model.title}}</h1>
 <p>{{model.story}}</p>
-{{edit-article model=model edit="edit"}}
+
+{{edit-article model=model destroyArticle="destroyArticle" edit="edit"}}
+
+{{comment-tile comments=model.comments}}
+
+{{new-comment article=model saveComment="saveComment"}}

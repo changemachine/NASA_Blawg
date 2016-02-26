@@ -1,8 +1,7 @@
-
 <div class="grid-cell">
   <div class="tzr-th">
-    {{#link-to 'article' article.id}}
-    <img src={{article.image}} alt={{article.type}} {{action 'imageHide'}}>
+    {{#link-to 'article' article}}
+    <img src={{article.image}} alt={{article.type}}>
     {{/link-to}}
   </div>
 
@@ -12,4 +11,7 @@
     <span class="tz_l">{{article.author}}</span>
     <span class="tz_r">{{moment-from-now article.posted}}</span>
   </div>
+
+
+
 </div>

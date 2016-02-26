@@ -10,15 +10,6 @@ export default Ember.Route.extend({
     });
   },
   actions: {
-    // saveArticle(details) {
-    //   var newArticle = this.store.createRecord('article', details);
-    //   newArticle.save();
-    //   this.transitionTo('index');
-    // },
-    // destroyArticle(article) {
-    //   article.destroyRecord();
-    //   this.transitionTo('index');
-    // }
-    //
+
   }
 });

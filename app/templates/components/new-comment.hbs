@@ -1,0 +1,17 @@
+{{#if showCommentForm}}
+<div class="container">
+  <form class="saveComment form">
+    <div class="form-group">
+      {{input value=commenter class="w50" id="commenter" placeholder="Commenter Name"}}
+    </div>
+
+    <div class="form-group">
+      {{textarea value=comment_text class="w90" id="comment_text" placeholder="Your post..."}}
+    </div>
+
+    <button {{action 'saveComment' article}}>Save!</button>
+  </form>
+</div>
+{{else}}
+  <button {{action 'showCommentForm'}}>Comment</button>
+{{/if}}

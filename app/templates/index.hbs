@@ -1,38 +1,15 @@
-<div class="header jumbotron">
-  <h1> Welcome to NASA Blawg </h1>
-  <p>Nerds!</p>
-</div>
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div name="hamburger" class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed"
-      data-toggle="collapse" data-target="#menu-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      {{ link-to 'Home' 'index' class="navbar-brand" }}
-    </div>
-    <div class="collapse navbar-collapse" id="menu-collapse">
-      <ul class="nav navbar-nav">
-        <!-- {{#link-to 'contact'}}Contact Us{{/link-to}}
-        {{#link-to 'about'}}About Us{{/link-to}} | -->
-        <li>{{ link-to 'About' 'about' }}</li>
-        <li>{{ link-to 'Contact' 'contact' }}</li>
-        <li>{{ link-to 'New Article' 'new-article' }}</li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+{{ header-nav }}
 <div class="container">
   {{outlet}}
 </div>
 
 <div class="grid">
   {{#each model.article as |article|}}
-    {{article-tile article=article destroyArticle="destroyArticle"}}
+    {{article-tile article=article model="model"}}
   {{/each}}
 </div>
+
+<!-- {{#each model.comment as |comment|}}
+  {{comment.commenter}}
+  {{comment.comment_text}}
+{{/each}} -->
